@@ -6,6 +6,7 @@ import CardList from '../components/CardList';
 import ErrorBoundry from '../components/ErrorBoundry';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+import Loading from '../components/Loading';
 
 import './App.css';
 
@@ -33,10 +34,11 @@ class App extends Component {
   render() {
     const { searchField , onSearchChange ,todos , isPending} = this.props;
     const filteredTodo = todos.filter(todo => { return todo.title.toLowerCase().includes(searchField.toLowerCase())});
-    return isPending ? <h1>Loading...</h1> :
+    return isPending ? <Loading />
+     :
      (
-       <div>
-        <div className="tc">
+       <div className='centered' style={{margin: '40px'}}> 
+        <div className="tc" style={{margin: '15px'}}>
         <SearchBox onSearchChange={onSearchChange} />
         </div>
         <Scroll>
