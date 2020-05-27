@@ -7,7 +7,7 @@ const Scroll = (props) => {
       overflowX: 'hide', 
       overflowY: isPending ? 'hide' : 'scroll',
       border: '5px solid rgb(0, 88, 88)', 
-      height: '550px', 
+      height: '720px', 
       maxWidth: '1200px', 
       margin: '20px auto'
     }

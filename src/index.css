@@ -5,7 +5,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
   background: linear-gradient(to left, rgb(10, 34, 100) 0%, rgb(0, 146, 146) 100%); /* w3c */
-
 }
 
 code {
