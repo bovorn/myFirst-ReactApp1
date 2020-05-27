@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "afda1d314f3d91d4a1ad535cf3d97c2a",
+    "revision": "9e8adfc5e1bb786767a6a8878615cb8a",
     "url": "/myFirst-ReactApp1/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/myFirst-ReactApp1/static/css/2.3c03f26f.chunk.css"
   },
   {
-    "revision": "7adb238895c8e25c25c5",
-    "url": "/myFirst-ReactApp1/static/css/main.3bcb98d6.chunk.css"
+    "revision": "0aa286029f8bc528b72e",
+    "url": "/myFirst-ReactApp1/static/css/main.9c12f268.chunk.css"
   },
   {
     "revision": "8f542dc76a00d9737a11",
@@ -20,11 +20,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/myFirst-ReactApp1/static/js/2.15a20c3d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7adb238895c8e25c25c5",
-    "url": "/myFirst-ReactApp1/static/js/main.c20ed784.chunk.js"
+    "revision": "0aa286029f8bc528b72e",
+    "url": "/myFirst-ReactApp1/static/js/main.ac6008f5.chunk.js"
   },
   {
     "revision": "1981d4cd4eca7ea30c2e",
     "url": "/myFirst-ReactApp1/static/js/runtime-main.c9c1cf36.js"
+  },
+  {
+    "revision": "12a3db8ba7f5423327bb12aed3c41977",
+    "url": "/myFirst-ReactApp1/static/media/SEGA.12a3db8b.woff"
   }
 ]);
