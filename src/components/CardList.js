@@ -1,14 +1,21 @@
 import React from 'react';
-import Todo from './Todo';
+import Card from './Card';
 
-export default function cardList({ todos }) {
+export default function CardList({ robots }) {
     return (
-        <ul>
-            {
-                todos.map( (todo, i) => { 
-                   return <Todo key={todos[i].id} title={todos[i].title} completed={todos[i].completed}/>;
-                })
-            }
-        </ul>
+        <div>
+        {
+            robots.map((user, i) => {
+            return (
+                <Card
+                key={i}
+                id={robots[i].id}
+                name={robots[i].name}
+                email={robots[i].email}
+                />
+            );
+            })
+        }
+        </div>
     )
 }

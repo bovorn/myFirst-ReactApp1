@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { setSearchField, fetchTodos } from '../actions';
+import { setSearchField, requestRobots } from '../actions';
 
 import CardList from '../components/CardList';
 import ErrorBoundry from '../components/ErrorBoundry';
@@ -12,42 +12,43 @@ import './App.css';
 
 const mapStateToProps = (state) => {
   return {
-    searchField: state.searchTodos.searchField, 
-    todos : state.requestTodos.todos,
-    isPending : state.requestTodos.isPending,
+    searchField: state.searchRobots.searchField,
+    robots: state.requestRobots.robots,
+    isPending: state.requestRobots.isPending
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
-    return {
-      onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
-      requestTodos: () => dispatch(fetchTodos())
-    }
+  return {
+    onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+    onRequestRobots: () => dispatch(requestRobots())
+  }
 }
 
 class App extends Component {
 
   componentDidMount() {
-    this.props.requestTodos();
+    this.props.onRequestRobots();
   }
 
   render() {
-    const { searchField , onSearchChange ,todos , isPending} = this.props;
-    const filteredTodo = todos.filter(todo => { return todo.title.toLowerCase().includes(searchField.toLowerCase())});
-    return isPending ? <Loading />
-     :
-     (
-       <div className='centered' style={{margin: '40px'}}> 
-        <div className="tc" style={{margin: '15px'}}>
-        <SearchBox onSearchChange={onSearchChange} />
-        </div>
+    const { robots, searchField, onSearchChange, isPending } = this.props;
+    const filteredRobots = robots.filter(robot => {
+      return robot.name.toLowerCase().includes(searchField.toLowerCase());
+    })
+    return (
+      <div className='tc'>
+        <h1 className='f1'>RoboFriends</h1>
+        <SearchBox searchChange={onSearchChange}/>
         <Scroll>
-          <ErrorBoundry>
-            <CardList todos={filteredTodo} />
-          </ErrorBoundry>
+          { isPending ? <Loading /> :
+            <ErrorBoundry>
+              <CardList robots={filteredRobots} />
+            </ErrorBoundry>
+          }
         </Scroll>
-        </div>
-      );
+      </div>
+    );
   }
 }
 

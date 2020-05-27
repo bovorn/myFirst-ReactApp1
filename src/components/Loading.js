@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Loading() {
     return (
-        <div className="fixed w-100 tc bg-white" style={{top: '50%', transform: 'translateY(-50%)'}}>
-            <h4>LOADING</h4>
+        <div className="fixed w-100 tc bg-white" style={style.loading}>
+            <h4 style={{color: 'red'}}>LOADING</h4>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="red">
                 <path transform="translate(0 0)" d="M0 12 V20 H4 V12z">
                 <animateTransform attributeName="transform" type="translate" values="0 0; 28 0; 0 0; 0 0" dur="1.5s" begin="0" repeatCount="indefinite" keyTimes="0;0.3;0.6;1" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline" />
@@ -17,4 +17,12 @@ export default function Loading() {
             </svg>
         </div>
     )
+}
+
+const style = {
+    loading: {
+        top: '50%', 
+        transform: 'translateY(-50%)', 
+        backgroundColor: 'transparent',
+    }
 }
