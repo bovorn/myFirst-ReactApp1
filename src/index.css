@@ -4,7 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
-  background: linear-gradient(to left, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+  background: linear-gradient(to left, rgb(10, 34, 100) 0%, rgb(0, 146, 146) 100%); /* w3c */
 
 }
 

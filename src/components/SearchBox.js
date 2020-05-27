@@ -1,6 +1,6 @@
-import React from 'react'
+import React , { Component } from 'react'
 
-export default function SearchBox({ searchfield, onSearchChange }) {
+const SearchBox = ({ onSearchChange }) =>  {
     return (
         <input
         aria-label="Search Robot"
@@ -10,5 +10,9 @@ export default function SearchBox({ searchfield, onSearchChange }) {
         placeholder='Search...'
         onChange={onSearchChange}
         />
-    )
-}
+    );
+} 
+
+
+
+export default SearchBox;
