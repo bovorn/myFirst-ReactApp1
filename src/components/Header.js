@@ -6,7 +6,7 @@ export default function Header() {
         <div>
             <h1 className='f1'>RoboFriends</h1>
             <div>
-            <CounterButton color='red' />
+            <CounterButton color='white' />
             </div>
         </div>
     )

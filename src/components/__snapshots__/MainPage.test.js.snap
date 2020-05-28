@@ -13,9 +13,19 @@ exports[`renders MainPage without crashing 1`] = `
       </h1>
       <div>
         <button
-          color="red"
           id="counter"
           onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "border": "1px solid white",
+              "borderRadius": 5,
+              "color": "white",
+              "cursor": "pointer",
+              "margin": 8,
+              "padding": 10,
+            }
+          }
         >
           Count: 
           0

@@ -4,6 +4,17 @@ exports[`expect to render CounterButton component 1`] = `
 <button
   id="counter"
   onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "border": "1px solid undefined",
+      "borderRadius": 5,
+      "color": undefined,
+      "cursor": "pointer",
+      "margin": 8,
+      "padding": 10,
+    }
+  }
 >
   Count: 
   0

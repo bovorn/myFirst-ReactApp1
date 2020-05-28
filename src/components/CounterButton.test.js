@@ -11,6 +11,6 @@ it('correctly increments the counter', () => {
     const wrapper = renderer.create(<CounterButton color="red" />);
     
     wrapper.root.findByProps({id: "counter"}).props.onClick();
-    expect(wrapper.getInstance().state).toEqual({ count: 1 });
+    expect(wrapper.getInstance().state.count).toEqual(1);
     expect(wrapper.getInstance().props.color).toEqual("red");
 }) 
