@@ -5,12 +5,12 @@ import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
-import { createLogger } from 'redux-logger';
+//import { createLogger } from 'redux-logger';
 import 'tachyons';
 import { Provider } from 'react-redux';
 import { requestRobots, searchRobots } from './reducers'
 
-const logger = createLogger()
+//const logger = createLogger()
 
 const rootReducers = combineReducers({ searchRobots , requestRobots})
 
