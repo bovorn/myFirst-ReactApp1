@@ -7,7 +7,7 @@ exports[`expect to render CardList component 1`] = `
   >
     <img
       alt="robots"
-      src="https://robohash.org/1?size=200x200"
+      src="https://robohash.org/1?set=set2&size=180x180"
     />
     <div>
       <h2>
